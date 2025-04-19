@@ -11,11 +11,11 @@ use Illuminate\Support\Facades\Redirect;
 
 class UserController extends Controller
 {
-    public function index(): View
-    {
-        $user = UserModel::all();
-        return view('user', ['data' => $user]);
-    }
+    public function index()
+{
+    $user = UserModel::with('level')->get();
+    return view('user', ['data' => $user]);
+}
 
     public function tambah(): View
     {

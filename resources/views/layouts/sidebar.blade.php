@@ -74,7 +74,4 @@ placeholder="Search" aria-label="Search">
     </form>
 </li>
 
-            
-        </ul>
-    </nav>
-</div>
+    
